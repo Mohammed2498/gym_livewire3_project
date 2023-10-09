@@ -28,9 +28,18 @@
             <label for="duration" class="form-label">مدة الاشتراك</label>
             <select wire:change="calculateTotalPrice" wire:model="duration" id="duration" class="form-control">
                 <option value="" selected>اختر مدة الاشتراك</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+                <option value="1">شهر</option>
+                <option value="2">شهرين</option>
+                <option value="3">3أشهر</option>
+                <option value="4">4أشهر</option>
+                <option value="5">5أشهر</option>
+                <option value="6">6أشهر</option>
+                <option value="7">7أشهر</option>
+                <option value="8">8أشهر</option>
+                <option value="9">9أشهر</option>
+                <option value="10">10أشهر</option>
+                <option value="11">11أشهر</option>
+                <option value="12">سنة</option>
             </select>
             <x-error-message property="duration" />
         </div>

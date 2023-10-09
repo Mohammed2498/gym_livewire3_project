@@ -31,7 +31,6 @@ use Illuminate\Support\Facades\Route;
 //require __DIR__ . '/auth.php';
 
 
-
 Route::prefix('/admin/')->name('admin.')->group(function () {
 
     Route::middleware('admin')->group(function () {
@@ -44,5 +43,4 @@ Route::prefix('/admin/')->name('admin.')->group(function () {
 
     Route::view('login', 'admin.auth.login')->middleware('guest:admin')->name('login');
     Route::view('register', 'admin.auth.register')->middleware('guest:admin')->name('register');
-
 });

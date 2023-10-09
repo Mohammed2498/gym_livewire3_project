@@ -8,6 +8,7 @@
             id="email"
             placeholder="Enter your email or username"
             autofocus/>
+        <x-error-message property="email"/>
     </div>
     <div class="mb-3 form-password-toggle">
         <div class="d-flex justify-content-between">
@@ -23,6 +24,7 @@
                 aria-describedby="password"/>
             <span class="input-group-text cursor-pointer"><i class="ti ti-eye-off"></i></span>
         </div>
+        <x-error-message property="password"/>
     </div>
     <div class="mb-3">
         <div class="form-check">

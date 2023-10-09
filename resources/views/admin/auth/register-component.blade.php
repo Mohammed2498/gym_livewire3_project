@@ -28,8 +28,9 @@
                    id="password_confirmation" class="form-control"
                    placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                    aria-describedby="password_confirmation"/>
-            <x-error-message property="password_confirmation"/>
+            <span class="input-group-text cursor-pointer"><i class="ti ti-eye-off"></i></span>
         </div>
+        <x-error-message property="password_confirmation"/>
     </div>
     <button type="submit" class="btn btn-primary d-grid w-100">
         <x-loading-state buttonName="تسجيل" target="register"/>
