@@ -133,8 +133,8 @@ class SubscriptionsCreate extends Component
             $this->remaining_payment = $this->subscription_price;
         }
 
-        Payment::create([
-            'subscription_id' => $subscription->id,
+        $subscription->payment()->create([
+//            'subscription_id' => $subscription->id,
             'payment_amount' => $this->payment_amount,
             'remaining_payment' => $this->remaining_payment,
             'payment_status' => $this->payment_status,
