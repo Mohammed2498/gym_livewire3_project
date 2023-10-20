@@ -13,6 +13,7 @@
     </div>
     @livewire('admin.subscribers.subscribers-update')
     @livewire('admin.subscribers.subscribers-delete')
+    @livewire('admin.subscribers.subscribers-show')
     @livewire('admin.subscriptions.subscriptions-create')
     @livewire('admin.subscriptions.subscriptions-update-payment')
 </x-layouts.admin.admin-layout>

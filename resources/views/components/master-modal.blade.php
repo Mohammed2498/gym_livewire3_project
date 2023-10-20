@@ -13,9 +13,11 @@
                     <button type="button" class="btn btn-label-secondary waves-effect" data-bs-dismiss="modal">
                         Close
                     </button>
-                    <button type="submit" class="btn btn-primary waves-effect waves-light">
-                        <x-loading-state buttonName="Submit" target="{{ $functionName }}" />
-                    </button>
+                    @if ($modalId != 'showModal')
+                        <button type="submit" class="btn btn-primary waves-effect waves-light">
+                            <x-loading-state buttonName="Submit" target="{{ $functionName }}" />
+                        </button>
+                    @endif
                 </div>
             </form>
         </div>

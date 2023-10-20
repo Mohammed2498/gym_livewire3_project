@@ -126,6 +126,10 @@
                                            class="dropdown-item" href="javascript:void(0);"><i
                                                 class="ti ti-trash me-1"></i>
                                             حذف</a>
+                                        <a wire:click="$dispatch('subscriberShow',{id:{{ $subscriber->id }}})"
+                                           class="dropdown-item" href="javascript:void(0);"><i
+                                                class="ti ti-trash me-1"></i>
+                                            عرض تفاصيل المشترك</a>
                                         @if ($subscriber->subscriptions)
                                             @if($subscriber->subscriptions->payment->payment_status === 'partial'|| $subscriber->subscriptions->payment->payment_status === 'not_paid')
                                                 <a wire:click="$dispatch('completeRemainingPayment',{id:{{ $subscriber->id }}})"
